@@ -1,0 +1,3 @@
+Django
+Pillow #modelsでimageFieldを使うときに必要
+mysqlclient   # pythonでMySQLに接続するためのドライバ

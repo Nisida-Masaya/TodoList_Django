@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron">
+    <h1 class="display-4">詳細情報</h1>
+    <p class="lead">内容を確認しよう！</p>
+</div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        タイトル：{{ object.title }}
+    </div>
+    <div class="alert alert-success" role="alert">
+        内容：{{ object.contens }}
+    </div>
+    <input type="button" value="戻る" class="btn btn-secondary" role="alert" onClick="javascript:history.go(-1);">
+</div>
+
+{% endblock content %}

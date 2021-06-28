@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron">
+    <h1 class="display-4">TodoList 新規登録</h1>
+    <p class="lead">予定を登録しよう！</p>
+</div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+    <form action="" method="POST">{% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class="btn btn-primary" value="create">
+    </form>
+</div>
+{% endblock content %}

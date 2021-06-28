@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>以下の内容を削除してもいいですか？</h1>
+<div class="container">
+
+    <form action="" method="POST">{% csrf_token %}
+
+        <div class="alert alert-success" role="alert">
+            タイトル：{{ object.title }}
+        </div>
+        <div class="alert alert-success" role="alert">
+            内容：{{ object.contens }}
+        </div>
+        <input type="submit" value="削除" class="btn btn-danger">
+        <input type="button" value="戻る" class="btn btn-primary" onClick="javascript:history.go(-1);">
+    </form>
+</div>
+{% endblock content %}
